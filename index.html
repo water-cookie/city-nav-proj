@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>CityNav: Language-Goal Aerial Navigation Dataset with Geographic Information</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <!-- <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered"> -->
+    <section class="section hero">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full">
+            <h1 class="title is-2 publication-title">CityNav: Language-Goal Aerial Navigation Dataset<br>with Geographic Information</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a>Jungdae Lee</a><sup>1*</sup>,
+              </span>
+              <span class="author-block">
+                <a>Taiki Miyanishi</a><sup>2,4,5*</sup>,
+              </span>
+              <span class="author-block">
+                <a>Shuhei Kurita</a><sup>3,5</sup>,
+              </span>
+              <span class="author-block">
+                <a>Koya Sakamoto</a><sup>6</sup>,
+              </span>
+              <span class="author-block">
+                <a>Daichi Azuma</a><sup>7</sup>,
+              </span>
+              <span class="author-block">
+                <a>Yutaka Matsuo</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a>Nakamasa Inoue</a><sup>1</sup>
+              </span>
+              <span class="author-block">
+                (* indicates equal contribution)
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"></span><sup>1</sup>Tokyo Institute of Technology,</span>
+              <span class="author-block"></span><sup>2</sup>The University of Tokyo,</span>
+              <span class="author-block"></span><sup>3</sup>NII,</span>
+              <span class="author-block"></span><sup>4</sup>ATR,</span>
+              <span class="author-block"></span><sup>5</sup>RIKEN AIP,</span>
+              <span class="author-block"></span><sup>6</sup>Kyoto University,</span>
+              <span class="author-block"></span><sup>7</sup>Sony Semiconductor Solutions</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <!-- <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark"> -->
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                    
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <!-- Supplementary PDF link -->
+                  <!-- <span class="link-block">
+                    <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Supplementary</span>
+                  </a>
+                </span> -->
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://anonymous.4open.science/r/citynav-6CFE/" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                  <span>Code</span>
+                  </a>
+                </span>
+
+                  <!-- Web simulator link -->
+                  <!-- <span class="link-block">
+                      <a href="https://k0uya.github.io/citynav_template/" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Web simulator</span>
+                    </a>
+                  </span> -->
+
+                  <!-- dataset link -->
+                  <!-- <span class="link-block">
+                    <a href="https://k0uya.github.io/citynav_template/" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon" style="vertical-align: middle; font-size: 20px;">🤗</span>
+                        <span style="vertical-align: middle;">Dataset</span>
+                    </a>
+                  </span> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <div class="content has-text-justified">
+          <p><b>TL;DR</b>: CityNav is a dataset for vision-and-language aerial navigation 
+            that consists of human-generated trajectories paired with  descriptions on real-world 3D cities.</p>
+            <p class="new-line"></p>
+          <img src="static/figures/teaser.png" alt="teaser" class="blend-img-background center-image" style="width: 120%; height: auto;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Paper abstract -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Overview</h2>
+        <div class="content has-text-justified">
+          <p>
+            We introduce CityNav, a new dataset for language-goal aerial navigation using a 3D point cloud representation from the real-world cities. 
+            CityNav includes 32,637 natural language descriptions paired with human demonstration trajectories, 
+            collected from participants via a new web-based 3D simulator developed for this research. 
+            Each description specifies a navigation goal, leveraging the names and locations of landmarks within the real-world cities. 
+            We also provide baseline models of navigation agents that incorporate an internal 2D spatial map representing landmarks referenced in the descriptions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Aerial Navigation Task</h2>
+        <div class="content has-text-justified">
+          <video poster="" id="tree" autoplay controls muted loop height="100%">
+            <source src="static/videos/demo_movie_citynav.mp4"
+            type="video/mp4">
+          </video>
+          <p class="new-line"></p>
+          <p>
+            The aerial agent is randomly spawned in the city and must locate the target object 
+            corresponding to a given linguistic description, using the agent's first-person view images and geographic information.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- demonstration video -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Web-based 3D Flight Simulator</h2>
+        <div class="content has-text-justified">
+          <video poster="" id="tree" autoplay controls muted loop height="100%">
+            <source src="static/videos/citynav_web_demo_mid_quality.mp4"
+            type="video/mp4">
+          </video>
+          <p class="new-line"></p>
+          <p>
+            To collect trajectory data via the web, we developed a web-based flight simulator 
+            that allows users to operate an aerial agent within 3D enviroments.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Dataset Statistics -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Dataset Statistics</h2>
+        <div class="content has-text-justified">
+          <img src="static/figures/data_statistics.png" alt="statistics of our proposed dataset" class="blend-img-background center-image">
+          <p class="new-line"></p>
+          <p>
+            <strong>Dataset Statistics:</strong> (a) summarizes the statistics of the number of scenes and trajectories for each set, 
+            (b) illustrates the distributions for the length of collected trajectories. 
+            (c) illustrates the distributions for the description length corresponding to the trajectories, 
+            (d) shows the distance distribution of eval splits from the starting point to the goal, 
+            (e) shows the episode length of both the shortest path and human demonstration trajectories, 
+            and (f) shows action histograms for the shortest path and human demonstration.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Method -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Map-based Goal Predictor</h2>
+        <div class="content has-text-justified">
+          <img src="static/figures/method.png" alt="our proposed method" class="blend-img-background center-image">
+          <p class="new-line"></p>
+          <p>
+            Map-based Goal Predictor (MGP) is our proposed model that combines state-of-the-art off-the-shelf models to perform map-based goal prediction.
+            It utilizes navigation maps generated at each time step through the following three steps: (i) target, landmark, and surroundings name extraction by GPT-3.5 Turbo, 
+            (ii) object detection and segmentation by GroundingDINO and Mobile-SAM, (iii) optional coordinate refinement by LLaVA-1.6-34b using the set-of-mark prompting.
+            A map encoder, using a navigation map that includes a landmark map, view & explore area maps, and target & surroundings maps, is trained alongside the RGB and depth encoders of Cross-Modal Attention.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero">
+  <div class="container-wrapper">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full" style="height: 120%;">
+        <h2 class="title is-3">Aerial Navigation Results</h2>
+          <div id="carousel1" class="carousel carousel1">
+          <div class="item">
+            <video autoplay muted loop controls style="width: 120%; height: auto;">
+              <source src="static/videos/qualitative_2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item">
+            <video autoplay muted loop controls style="width: 120%; height: auto;">
+              <source src="static/videos/qualitative_3.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item">
+            <video autoplay muted loop controls style="width: 120%; height: auto;">
+              <source src="static/videos/qualitative_4.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item">
+            <video autoplay muted loop controls style="width: 120%; height: auto;">
+              <source src="static/videos/qualitative_5.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item">
+            <video autoplay muted loop controls style="width: 120%; height: auto;">
+              <source src="static/videos/qualitative_6.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item">
+            <video autoplay muted loop controls style="width: 120%; height: auto;">
+              <source src="static/videos/qualitative_7.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item">
+            <video autoplay muted loop controls style="width: 120%; height: auto;">
+              <source src="static/videos/qualitative_8.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item">
+            <video autoplay muted loop controls style="width: 120%; height: auto;">
+              <source src="static/videos/qualitative_9.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item">
+            <video autoplay muted loop controls style="width: 120%; height: auto;">
+              <source src="static/videos/qualitative_1.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var carousels = bulmaCarousel.attach('.carousel1', {
+      autoplay: false, // Disable the automatic page switch
+    });
+  });
+</script>
+
+
+<style>
+  .container-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+  }
+
+  .custom-width {
+    width: 50%;
+  }
+</style>
+
+<style>
+  .enlarged-image {
+    width: 120%; /* 画像の幅をコンテナに合わせる */
+    height: 120%; /* 画像の縦横比を維持 */
+  }
+</style>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
