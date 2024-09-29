@@ -176,7 +176,7 @@ hr.separator{
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: center; */
+  justify-content: center;
 }
 
 /* 各アイテムのサイズとレイアウトを設定 */
@@ -215,4 +215,100 @@ hr.separator{
 }
 
 
+.center-image {
+  display: block;
+  margin: 0 auto;
+}
 
+.custom_slider {
+  position: relative;
+  /* width: 100vw;
+  height: 100vh; */
+  width: 100%;
+  height: auto;
+  /* max-width: 800px; */
+  overflow: hidden;  /* カルーセル内のコンテンツは隠す */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.w-slider-mask {
+  display: flex;
+  transition: transform 800ms ease;
+  width: 1000%;
+}
+
+.slide {
+  /* width: 100vw;
+  height: 100vh; */
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  margin: 0 auto;
+}
+
+.video_class video {
+  /* width: 100%;
+  height: 100%; */
+  width: 100%;
+  height: auto;
+  /* max-width: 800px; */
+  object-fit: cover;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+/* スクロール可能なページ全体に対応 */
+body {
+  overflow-y: auto;  /* 縦方向にスクロールできるように */
+  overflow-x: hidden;  /* 横スクロールを無効化 */
+}
+
+/* 画像と動画に共通のスタイルを適用 */
+.blend-img-background {
+  width: 100%;
+  /* max-width: 800px;  */
+  height: auto; 
+}
+
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem; /* ドットとスライダーの間のスペース */
+}
+
+.dot {
+  width: 10px; /* ドットの幅 */
+  height: 10px; /* ドットの高さ */
+  border-radius: 50%; /* 丸くする */
+  background-color: black; /* 黒色 */
+  margin: 0 5px; /* ドットの間のスペース */
+  opacity: 0.5; /* 初期の透明度 */
+  transition: opacity 0.3s; /* 透明度の変化にアニメーション */
+}
+.active {
+  opacity: 1; /* アクティブなドットは完全に表示 */
+  width: 13px;
+  height: 13px;
+}

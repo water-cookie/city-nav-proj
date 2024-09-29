@@ -163,7 +163,7 @@
           <p><b>TL;DR</b>: CityNav is a dataset for vision-and-language aerial navigation 
             that consists of human-generated trajectories paired with  descriptions on real-world 3D cities.</p>
             <p class="new-line"></p>
-          <img src="static/figures/teaser.png" alt="teaser" class="blend-img-background center-image" style="width: 120%; height: auto;">
+          <img src="static/figures/teaser.png" alt="teaser" class="blend-img-background center-image" style="width: 100%; height: auto;">
         </div>
       </div>
     </div>
@@ -201,7 +201,7 @@
       <div class="column is-full">
         <h2 class="title is-3">Aerial Navigation Task</h2>
         <div class="content has-text-justified">
-          <video poster="" id="tree" autoplay controls muted loop height="100%">
+          <video poster="" id="tree" autoplay controls muted loop>
             <source src="static/videos/demo_movie_citynav.mp4"
             type="video/mp4">
           </video>
@@ -225,7 +225,7 @@
       <div class="column is-full">
         <h2 class="title is-3">Web-based 3D Flight Simulator</h2>
         <div class="content has-text-justified">
-          <video poster="" id="tree" autoplay controls muted loop height="100%">
+          <video poster="" id="tree" autoplay controls muted loop>
             <source src="static/videos/citynav_web_demo_mid_quality.mp4"
             type="video/mp4">
           </video>
@@ -290,65 +290,119 @@
 
 <hr class="container is-max-desktop separator">
 
-<!-- Results -->
-<section class="section hero">
-  <div class="container-wrapper">
+
+<section class="section hero"></section>
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-full" style="height: 120%;">
+      <div class="column is-full">
         <h2 class="title is-3">Aerial Navigation Results</h2>
-          <div id="carousel1" class="carousel carousel1">
-          <div class="item">
-            <video autoplay muted loop controls style="width: 120%; height: auto;">
-              <source src="static/videos/qualitative_2.mp4" type="video/mp4">
-            </video>
+      <div class="custom_slider w-slider" data-autoplay="true" data-duration="800">
+        <!-- スライドを包むマスクエリア -->
+        <div class="mask w-slider-mask" id="w-slider-mask-0">
+          
+          <!-- 各スライド -->
+          <div class="slide w-slide" aria-label="1 of 9" role="group">
+            <div class="div-block-9 first_video">
+              <div class="video_class w-embed">
+                <video width="100%" height="auto" autoplay muted controls loop preload="metadata">
+                  <source src="static/videos/qualitative_1.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
           </div>
-          <div class="item">
-            <video autoplay muted loop controls style="width: 120%; height: auto;">
-              <source src="static/videos/qualitative_3.mp4" type="video/mp4">
-            </video>
+
+          <div class="slide w-slide" aria-label="2 of 9" role="group">
+            <div class="div-block-9">
+              <div class="video_class w-embed">
+                <video width="100%" height="auto" autoplay muted controls loop preload="metadata">
+                  <source src="static/videos/qualitative_2.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
           </div>
-          <div class="item">
-            <video autoplay muted loop controls style="width: 120%; height: auto;">
-              <source src="static/videos/qualitative_4.mp4" type="video/mp4">
-            </video>
+
+          <div class="slide w-slide" aria-label="3 of 9" role="group">
+            <div class="div-block-9">
+              <div class="video_class w-embed">
+                <video width="100%" height="auto" autoplay muted controls loop preload="metadata">
+                  <source src="static/videos/qualitative_3.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
           </div>
-          <div class="item">
-            <video autoplay muted loop controls style="width: 120%; height: auto;">
-              <source src="static/videos/qualitative_5.mp4" type="video/mp4">
-            </video>
+          <div class="slide w-slide" aria-label="4 of 9" role="group">
+            <div class="div-block-9">
+              <div class="video_class w-embed">
+                <video width="100%" height="auto" autoplay muted controls loop preload="metadata">
+                  <source src="static/videos/qualitative_4.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
           </div>
-          <div class="item">
-            <video autoplay muted loop controls style="width: 120%; height: auto;">
-              <source src="static/videos/qualitative_6.mp4" type="video/mp4">
-            </video>
+          <div class="slide w-slide" aria-label="5 of 9" role="group">
+            <div class="div-block-9">
+              <div class="video_class w-embed">
+                <video width="100%" height="auto" autoplay muted controls loop preload="metadata">
+                  <source src="static/videos/qualitative_5.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
           </div>
-          <div class="item">
-            <video autoplay muted loop controls style="width: 120%; height: auto;">
-              <source src="static/videos/qualitative_7.mp4" type="video/mp4">
-            </video>
+          <div class="slide w-slide" aria-label="6 of 9" role="group">
+            <div class="div-block-9">
+              <div class="video_class w-embed">
+                <video width="100%" height="auto" autoplay muted controls loop preload="metadata">
+                  <source src="static/videos/qualitative_6.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
           </div>
-          <div class="item">
-            <video autoplay muted loop controls style="width: 120%; height: auto;">
-              <source src="static/videos/qualitative_8.mp4" type="video/mp4">
-            </video>
+          <div class="slide w-slide" aria-label="7 of 9" role="group">
+            <div class="div-block-9">
+              <div class="video_class w-embed">
+                <video width="100%" height="auto" autoplay muted controls loop preload="metadata">
+                  <source src="static/videos/qualitative_7.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
           </div>
-          <div class="item">
-            <video autoplay muted loop controls style="width: 120%; height: auto;">
-              <source src="static/videos/qualitative_9.mp4" type="video/mp4">
-            </video>
+          <div class="slide w-slide" aria-label="8 of 9" role="group">
+            <div class="div-block-9">
+              <div class="video_class w-embed">
+                <video width="100%" height="auto" autoplay muted controls loop preload="metadata">
+                  <source src="static/videos/qualitative_8.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
           </div>
-          <div class="item">
-            <video autoplay muted loop controls style="width: 120%; height: auto;">
-              <source src="static/videos/qualitative_1.mp4" type="video/mp4">
-            </video>
+          <div class="slide w-slide" aria-label="9 of 9" role="group">
+            <div class="div-block-9">
+              <div class="video_class w-embed">
+                <video width="100%" height="auto" autoplay muted controls loop preload="metadata">
+                  <source src="static/videos/qualitative_9.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
           </div>
         </div>
+        <div class="arrow left-arrow" onclick="previousSlide()">&#9664;</div>
+        <div class="arrow right-arrow" onclick="nextSlide()">&#9654;</div>
       </div>
     </div>
   </div>
-  </div>
+  <div class="dots-container is-max-desktop"></div>
+</div>
 </section>
+
 
 <!--BibTex citation -->
 <section class="section" id="BibTeX">
@@ -372,6 +426,59 @@
       autoplay: false, // Disable the automatic page switch
     });
   });
+</script>
+
+<script>
+  let currentSlide = 0; // 現在のスライドのインデックス
+  const slides = document.querySelectorAll('.w-slide'); // 全スライドを取得
+  const totalSlides = slides.length; // スライドの総数
+
+  const sliderMask = document.getElementById('w-slider-mask-0'); // マスク部分を取得
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides; // 次のスライドに移動
+    updateSlidePosition();
+  }
+
+  function previousSlide() {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides; // 前のスライドに移動
+    updateSlidePosition();
+  }
+
+  function updateSlidePosition() {
+    const newTransformValue = `translateX(-${currentSlide * 100}%)`;
+    sliderMask.style.transform = newTransformValue; // スライド位置を更新
+    
+    updateDots(); // ドットの状態を更新
+  }
+
+  function createDots() {
+    const dotsContainer = document.querySelector('.dots-container');
+    for (let i = 0; i < totalSlides; i++) {
+      const dot = document.createElement('div');
+      dot.classList.add('dot');
+      dot.addEventListener('click', () => {
+        currentSlide = i; // クリックされたインデックスを設定
+        updateSlidePosition(); // スライドを更新
+      });
+      dotsContainer.appendChild(dot);
+    }
+  }
+
+  function updateDots() {
+    const dots = document.querySelectorAll('.dot');
+    dots.forEach((dot, index) => {
+      dot.classList.toggle('active', index === currentSlide);
+    });
+  }
+
+  // 初期化
+  createDots();
+  updateDots();
+  // 自動再生の設定（10秒ごとに次のスライドへ）
+  setInterval(() => {
+    nextSlide();
+  }, 10000); // 10000ms = 10秒
 </script>
 
 
